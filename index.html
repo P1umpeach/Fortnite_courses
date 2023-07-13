@@ -129,9 +129,6 @@
                             <div class="form-title">
                                 <h3>Get the course</h3>
                             </div>
-                            {% for msg in get_flashed_messages() %}
-                                <div data-wow-delay="0.3s" class="flash_error wow animate__animated animate__bounceIn">{{ msg }}</div>
-                            {% endfor %}
                             <select class="choose" name="ch">
                                 <option>Basic</option>
                                 <option>Standart</option>
@@ -141,7 +138,6 @@
                             <input type="checkbox" id="checkbox-id" name="permission" checked/>
                             <label for="checkbox-id">Send me news</label>
                             <input type="text" placeholder="email" name="tel">
-                            <input type="submit" class="button-field" value="Создать аккаунт"/>
                             <div class="button-send">
                                 <h3>SEND</h3>
                                 <img class="arrow" src="./pythonProject/static/images/Arrow.png" alt="">
